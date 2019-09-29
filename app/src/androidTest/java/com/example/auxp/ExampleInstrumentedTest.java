@@ -1,4 +1,4 @@
-package com.example.aux;
+package com.example.auxp;
 
 import android.content.Context;
 

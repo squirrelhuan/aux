@@ -1,4 +1,4 @@
-package com.example.aux;
+package com.example.auxp;
 
 
 import cn.demomaster.huan.quickdeveloplibrary.ApplicationParent;
