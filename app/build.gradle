@@ -11,6 +11,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -37,5 +40,6 @@ dependencies {
 
     implementation "com.jakewharton:butterknife:$butterknifeVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeVersion"
-    api project(path: ':quickdeveloplibrary')
+    //api project(path: ':quickdeveloplibrary')
+    api 'com.github.squirrelhuan:QuickDevelop:1.1.26a'
 }

@@ -1,3 +1,4 @@
-include ':app', ':quickdeveloplibrary'
+include ':app'
+//, ':quickdeveloplibrary'
 
-project (':quickdeveloplibrary').projectDir = new File('/Users/huan/AndroidStudioProjects/QuickDevelop/quickdeveloplibrary')
+//project (':quickdeveloplibrary').projectDir = new File('/Users/huan/AndroidStudioProjects/QuickDevelop/quickdeveloplibrary')

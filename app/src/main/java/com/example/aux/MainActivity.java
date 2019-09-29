@@ -62,6 +62,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @BindView(R.id.iv_shoot)
     ImageView iv_shoot;
+    @BindView(R.id.iv_pixel)
+    ImageView iv_pixel;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,6 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 int red = (color & 0xff0000) >> 16;
                 int green = (color & 0x00ff00) >> 8;
                 int blue = (color & 0x0000ff);
+                iv_pixel.setBackgroundColor(color);
                 QDLogger.d("color = "+color+",red="+red+",green="+green+",blue="+blue);
                 break;
             case R.id.btn_download_install:
@@ -116,7 +120,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //app更新
     private void updateApp(final Activity context,String url) {
-
             //兼容8.0 安装权限
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 boolean hasInstallPermission = context.getPackageManager().canRequestPackageInstalls();
