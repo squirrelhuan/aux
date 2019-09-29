@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <!-- <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检查root"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查root" />
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载文件" />
+
+        <Button
+            android:id="@+id/btn_update_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新指定文件" />
+
+        <Button
+            android:id="@+id/btn_get_machineId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取唯一标识" />
+
+        <Button
+            android:id="@+id/btn_isSimulator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否是模拟器" />
+
+
+        <ImageView
+            android:id="@+id/iv_shoot"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <Button
+            android:id="@+id/btn_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="截图" />
+
+        <Button
+            android:id="@+id/btn_pixel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取像素点" />
+
+
+        <Button
+            android:id="@+id/btn_download_install"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载并安装" />
+
+       <!-- <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查root" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查root" />-->
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
